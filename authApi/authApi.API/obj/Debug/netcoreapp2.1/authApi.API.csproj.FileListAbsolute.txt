@@ -1,0 +1,14 @@
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\bin\Debug\netcoreapp2.1\authApi.API.deps.json
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\bin\Debug\netcoreapp2.1\authApi.API.runtimeconfig.json
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\bin\Debug\netcoreapp2.1\authApi.API.runtimeconfig.dev.json
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\bin\Debug\netcoreapp2.1\authApi.API.dll
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\bin\Debug\netcoreapp2.1\authApi.API.pdb
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.csprojAssemblyReference.cache
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.csproj.CoreCompileInputs.cache
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.RazorAssemblyInfo.cache
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.RazorAssemblyInfo.cs
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.AssemblyInfoInputs.cache
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.AssemblyInfo.cs
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.RazorTargetAssemblyInfo.cache
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.dll
+C:\Users\pen11\source\repos\dotnet_tut\authApi\authApi.API\obj\Debug\netcoreapp2.1\authApi.API.pdb
