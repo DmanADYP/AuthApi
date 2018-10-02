@@ -14,6 +14,9 @@ using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using authApi.API.Interfaces;
 using authApi.API.service;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace authApi.API
 {
@@ -34,6 +37,18 @@ namespace authApi.API
             services.AddDbContext<DataContext>(x => x.UseSqlite(config.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddCors();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
+                    .GetBytes(config.GetSection("AppSettings:Token").Value)),
+                    ValidateIssuer = false, //issue is local host need to add
+                    ValidateAudience = false // audiance is local host need to add
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,8 +64,11 @@ namespace authApi.API
             }
 
             //app.UseHttpsRedirection();
-            app.UseMvc();
+
+
             app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseAuthentication();
+            app.UseMvc();
         }
     }
 }
